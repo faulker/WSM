@@ -74,8 +74,8 @@ __Actions:__
 
 * ```log``` - Log the state to the log file
 * ```alert``` - Pop-up a alert message box.
-* ```email``` (Requires other option ```email```) - EMail a alert message to one or more email address
-* ```exec``` (Requires other options ```exec```) - Execute a program.
+* ```email``` (Requires other option ```email_to```) - EMail a alert message to one or more email address
+* ```exec``` (Requires other options ```cmd```) - Execute a program.
 
 __Other Options:__
 
