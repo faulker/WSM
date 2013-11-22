@@ -1,0 +1,41 @@
+{
+    "configurations":
+    {
+        "log_file":"wsm.log",
+        "smtp_server":"SMTP Server IP or DNS Name",
+        "from_email":"from_WSM@faulk.me"
+    },
+    "services":
+    [
+        {
+            "system":"COMPUTER NAME or IP",
+            "service":"NAME of SERVICE to watch",
+            "auth":
+            {
+                "user":"NAME of a USER that has ADMIN rights on the computer",
+                "password":"That users PASSWORD"
+            },
+            "actions":
+            [
+                {
+                    "state":["running"],
+                    "action":["log"]
+                },
+                {
+                    "state":["stopped"],
+                    "action":["exec"],
+                    "cmd":"notepad.exe"
+                },
+                {
+                    "state":["error"],
+                    "action":["email"],
+                    "email_to":["user1@faulk.me", "user2@faulk.me"]
+                },
+                {
+                    "state":["access denined"],
+                    "action":["alert"]
+                }
+            ]
+        }
+    ]
+}
