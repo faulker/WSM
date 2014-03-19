@@ -104,7 +104,8 @@ Basic Configuration Example
         {
             "log_file":"wsm.log",
             "smtp_server":"SMTP Server IP or DNS Name",
-            "from_email":"from_WSM@faulk.me"
+            "from_email":"from_WSM@faulk.me",
+            "email_subject":"Subject Line"
         },
         "services":
         [

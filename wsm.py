@@ -154,7 +154,7 @@ def load_config(config_array):
     log_file = config_array["log_file"]
     smtp_server = config_array["smtp_server"]
     from_email = config_array["from_email"]
-    from_email = config_array["email_subject"]
+    email_subject = config_array["email_subject"]
 
 
 # opens the config.json file and dumps it as an array
